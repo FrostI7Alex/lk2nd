@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: BSD-3-Clause
+
+#include <skeleton32.dtsi>
+#include <lk2nd.dtsi>
+
+/ {
+	qcom,msm-id = <QCOM_ID_MSM8909 0>;
+	qcom,board-id = <8 0>;
+};
+
+&lk2nd {
+	saana {
+		model = "Microsoft Lumia 650 (saana)";
+		compatible = "msft,saana";
+
+		lk2nd,dtb-files = "msm8909-msft-saana";
+
+		gpio-keys {
+			compatible = "gpio-keys";
+			up {
+				lk2nd,code = <KEY_VOLUMEUP>;
+				gpios = <&tlmm 90 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+			};
+		};
+	};
+};

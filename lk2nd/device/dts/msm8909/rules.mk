@@ -5,4 +5,5 @@ LOCAL_DIR := $(GET_LOCAL_DIR)
 QCDTBS += \
 	$(LOCAL_DIR)/msm8905-qrd-skub.dtb \
 	$(LOCAL_DIR)/msm8909-1gb-qrd-skuc.dtb \
+	$(LOCAL_DIR)/msm8909-msft-saana.dtb \
 	$(LOCAL_DIR)/msm8909-mtp.dtb \
